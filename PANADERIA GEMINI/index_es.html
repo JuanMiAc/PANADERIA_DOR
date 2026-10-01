@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Migas amigas - Panadería Fronteriza</title>
+    <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,81 +15,193 @@
         <a href="index_pt.html" class="btn-lang">Português 🇵🇹</a>
     </div>
 
-    <header>
-        <h1>Migas amigas</h1>
-        <p class="tagline">Panadería Familiar Artesanal en la Frontera</p>
-        <nav>
-            <a href="#animacion">Proceso</a>
-            <a href="#panaderia">Panadería</a>
-            <a href="#pasteleria">Pastelería y Bollería</a>
-            <a href="#empanadas">Empanadas</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
+<header>
+    <!-- Sustituimos el texto H1 por la imagen del logo -->
+    <h1>
+        <img src="migas.png" alt="Migas amigas" class="header-logo">
+    </h1>
+    <p class="tagline">Panadería Familiar Artesanal en la Frontera</p>
+    <nav>
+        <a href="#animacion">Proceso</a>
+        <a href="#panaderia">Panadería</a>
+        <a href="#pasteleria">Pastelería y Bollería</a>
+        <a href="#empanadas">Empanadas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
 
     <main>
         <!-- Animación del proceso -->
+        <!-- Sección Proceso Artesanal -->
         <section id="animacion" class="animacion-section">
-            <h2>Nuestro Proceso Artesanal</h2>
-            <div class="animation-container">
-                <div class="step-card step-1">🌾 <span>1. Molienda</span></div>
-                <div class="step-card step-2">🥣 <span>2. Amasado</span></div>
-                <div class="step-card step-3">⏳ <span>3. Reposo</span></div>
-                <div class="step-card step-4">🔥 <span>4. Horno</span></div>
-            </div>
+                <h2><em>Nuestro Proceso Artesanal</em></h2>
+                <div class="animation-container">
+                    
+                    <!-- Paso 1 -->
+                    <div class="step-item">
+                        <div class="step-card step-1"></div>
+                        <p class="step-text">🌾 1. Molienda</p>
+                    </div>
+
+                    <!-- Paso 2 -->
+                    <div class="step-item">
+                        <div class="step-card step-2"></div>
+                        <p class="step-text">🥣 2. Amasado</p>
+                    </div>
+
+                    <!-- Paso 3 -->
+                    <div class="step-item">
+                        <div class="step-card step-3"></div>
+                        <p class="step-text">⏳ 3. Reposo</p>
+                    </div>
+
+                    <!-- Paso 4 -->
+                    <div class="step-item">
+                        <div class="step-card step-4"></div>
+                        <p class="step-text">🔥 4. Horno</p>
+                    </div>
+
+                </div>
         </section>
 
         <!-- Panadería (Hasta 12 productos) -->
         <section id="panaderia" class="catalog">
             <h2>Panadería Tradicional</h2>
             <div class="grid-productos">
+                
+                <!-- Producto 1: Masa Madre -->
                 <div class="producto-card">
-                    <div class="foto-placeholder">📸 Foto del Pan</div>
+                    <img src="panmasamadre.png" alt="Pan de Masa Madre" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
                     <h3>Pan de Masa Madre</h3>
                     <p><strong>Ingredientes:</strong> Harina de trigo ecológica, agua, masa madre natural y sal marina.</p>
                     <p><strong>Elaboración:</strong> Fermentación lenta de 24 horas y horneado en suelo de piedra.</p>
                 </div>
-            </div>
+
+                <!-- Producto 2: Centeno -->
+                <div class="producto-card">
+                    <img src="pancenteno.png" alt="Pan de Centeno" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Pan de Centeno</h3>
+                    <p><strong>Ingredientes:</strong> Harina de centeno integral, agua, masa madre de centeno y sal.</p>
+                    <p><strong>Elaboración:</strong> Amasado suave, fermentación prolongada en frío y corteza firme.</p>
+                </div>
+
+                <!-- Producto 3: Millo -->
+                <div class="producto-card">
+                    <img src="panmillo.png" alt="Pan de Millo" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Pan de Millo (Maíz)</h3>
+                    <p><strong>Ingredientes:</strong> Harina de maíz tradicional, harina de trigo de fuerza, agua y levadura.</p>
+                    <p><strong>Elaboración:</strong> Escaldado previo del maíz al estilo de la frontera y cocción lenta.</p>
+                </div>
+
+                <!-- Producto 4: Integral -->
+                <div class="producto-card">
+                    <img src="panintegral.png" alt="Pan Integral" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Pan Integral 100%</h3>
+                    <p><strong>Ingredientes:</strong> Harina de trigo 100% integral con todo su grano, agua y sal marina.</p>
+                    <p><strong>Elaboración:</strong> Reposo en bloque para desarrollar aromas y horneado tierno.</p>
+                </div>
+
+            </div> <!-- AQUÍ es donde cierra la grilla, DESPUÉS de los 4 productos -->
         </section>
+
 
         <!-- Pastelería (Hasta 8 productos) -->
         <section id="pasteleria" class="catalog">
             <h2>Pastelería y Bollería</h2>
             <div class="grid-productos">
+                
+                <!-- Producto 1: Cruasán Artesano -->
                 <div class="producto-card">
-                    <div class="foto-placeholder">📸 Foto del Dulce</div>
+                    <img src="cruasanartesano.png" alt="Cruasán Artesano" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
                     <h3>Cruasán Artesano</h3>
                     <p><strong>Ingredientes:</strong> Harina de fuerza, mantequilla pura, azúcar y levadura.</p>
                     <p><strong>Elaboración:</strong> Hojaldrado a mano con múltiples capas y horneado hasta dorar.</p>
                 </div>
-            </div>
+
+                <!-- Producto 2: Segundo Dulce -->
+                <div class="producto-card">
+                    <img src="pastelcrema.png" alt="Pastel de Crema" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Pastel de Crema</h3>
+                    <p><strong>Ingredientes:</strong> Hojaldre fino, crema pastelera artesanal infusionada con canela y limón.</p>
+                    <p><strong>Elaboración:</strong> Horneado crujiente de la base y relleno en frío para mantener la cremosidad.</p>
+                </div>
+
+                <!-- Producto 3: Tercer Dulce -->
+                <div class="producto-card">
+                    <img src="suizoazucar.png" alt="Suizo de Azúcar" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Suizos de Azúcar</h3>
+                    <p><strong>Ingredientes:</strong> Masa de brioche tierna, agua de azahar, huevo y azúcar perlado por encima.</p>
+                    <p><strong>Elaboración:</strong> Doble fermentación manual para una miga súper esponjosa y horneado rápido.</p>
+                </div>
+
+                <!-- Producto 4: Cuarto Dulce -->
+                <div class="producto-card">
+                    <img src="palamerachoco.png" alt="Palmera de Chocolate" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Palmera de Chocolate</h3>
+                    <p><strong>Ingredientes:</strong> Hojaldre artesano inverso, azúcar caramelizado y cobertura de chocolate puro.</p>
+                    <p><strong>Elaboración:</strong> Estirado y pliegue tradicional, horneado intenso y baño caliente en chocolate.</p>
+                </div>
+
+            </div> <!-- AQUÍ cierra la grilla de pastelería, metiendo los 4 productos en la misma fila -->
         </section>
+
 
         <!-- Empanadas (Hasta 4 productos) -->
         <section id="empanadas" class="catalog">
             <h2>Empanadas Caseras</h2>
             <div class="grid-productos">
+                
+                <!-- Producto 1: Empanada de Atún -->
                 <div class="producto-card">
-                    <div class="foto-placeholder">📸 Foto de la Empanada</div>
+                    <img src="empanada.png" alt="Empanada Gallega" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
                     <h3>Empanada de Atún Gallega</h3>
-                    <p><strong>Ingredientes:</strong> Masa de pan crujiente, sofrito de cebolla, pimientos y atún.</p>
-                    <p><strong>Elaboración:</strong> Relleno tradicional horneado lentamente.</p>
+                    <p><strong>Ingredientes:</strong> Masa de pan crujiente, sofrito tradicional de cebolla, pimientos y atún.</p>
+                    <p><strong>Elaboración:</strong> Relleno casero sazonado y horneado lentamente para unificar los sabores.</p>
                 </div>
-            </div>
+
+                <!-- Producto 2: Empanada de Carne -->
+                <div class="producto-card">
+                    <img src="empacarne.png" alt="Empanada de Carne" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Empanada de Carne Picada</h3>
+                    <p><strong>Ingredientes:</strong> Harina de trigo, carne vacuna seleccionada, cebolla, huevo duro y especias.</p>
+                    <p><strong>Elaboración:</strong> Guiso de carne a fuego lento con el punto justo de jugosidad antes del horneado.</p>
+                </div>
+
+                <!-- Producto 3: Empanada de Bacalao -->
+                <div class="producto-card">
+                    <img src="empabaca.png" alt="Empanada de Bacalao con Pasas" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Empanada de Bacalao con Pasas</h3>
+                    <p><strong>Ingredientes:</strong> Masa artesana, bacalao desmigado desalado, cebolla pochada y pasas dulces.</p>
+                    <p><strong>Elaboración:</strong> Contraste agridulce tradicional montado a mano y cocido en horno de piedra.</p>
+                </div>
+
+                <!-- Producto 4: Empanada de Pollo -->
+                <div class="producto-card">
+                    <img src="empapose.png" alt="Empanada de Pollo y Champiñones" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Empanada de Pollo y Setas</h3>
+                    <p><strong>Ingredientes:</strong> Masa fina crujiente, pechuga de pollo desmechada, champiñones y sofrito suave.</p>
+                    <p><strong>Elaboración:</strong> Relleno cremoso sellado con el repulgue artesanal de la casa y dorado perfecto.</p>
+                </div>
+
+            </div> <!-- AQUÍ cierra la grilla, metiendo las 4 empanadas juntas en paralelo -->
         </section>
+
 
         <!-- Contacto -->
         <section id="contacto" class="contacto">
-            <h2>Dónde Encontrarnos</h2>
+            <h2><u>Dónde Encontrarnos</u></h2>
             <div class="contacto-flex">
                 <div class="datos">
                     <p>📍 <strong>Dirección:</strong> Av. de la Raya, S/N - Frontera Hispano-Portuguesa</p>
                     <p>📞 <strong>Teléfono:</strong> +34 900 000 000</p>
-                </div>
+                    <p>✉️ <strong>Email:</strong> migas_amigas@gmail.com</p>
+                    <p>🌐 <strong>Facebook:</strong> /migasamigas</p>
+                    <p>📸 <strong>Instagram:</strong> @migas_amigas</p>
+                </div>   
                 <div class="croquis">
                     <div class="mapa-placeholder">
-                        🗺️ [Croquis de Ubicación]
-                        <small>Frontera España - Portugal</small>
+                           <img src="mapa.png" alt="Croquis de ubicación Migas amigas" style="width: 100%; height: auto; display: block;">
+                            <small style="margin-top: 8px;">Frontera España - Portugal</small>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,11 @@
     </div>
 
     <header>
-        <h1>Migas amigas</h1>
+        <!-- El logotipo se queda igual en ambos idiomas -->
+        <h1>
+            <img src="migas.png" alt="Migas amigas" class="header-logo">
+        </h1>
+        <!-- El eslogan traducido -->
         <p class="tagline">Padaria Familiar Artesanal na Fronteira</p>
         <nav>
             <a href="#animacion">Processo</a>
@@ -27,55 +31,162 @@
     </header>
 
     <main>
-        <!-- Animação do processo -->
+            <!-- Animação do processo -->
+    <!-- Seção do Processo Artesanal -->
         <section id="animacion" class="animacion-section">
-            <h2>O Nosso Processo Artesanal</h2>
+            <h2><em>O Nosso Processo Artesanal</em></h2>
             <div class="animation-container">
-                <div class="step-card step-1">🌾 <span>1. Moagem</span></div>
-                <div class="step-card step-2">🥣 <span>2. Amassado</span></div>
-                <div class="step-card step-3">⏳ <span>3. Repouso</span></div>
-                <div class="step-card step-4">🔥 <span>4. Forno</span></div>
+                
+                <!-- Passo 1 -->
+                <div class="step-item">
+                    <div class="step-card step-1"></div>
+                    <p class="step-text">🌾 1. Moagem</p>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="step-item">
+                    <div class="step-card step-2"></div>
+                    <p class="step-text">🥣 2. Amassado</p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="step-item">
+                    <div class="step-card step-3"></div>
+                    <p class="step-text">⏳ 3. Repouso</p>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="step-item">
+                    <div class="step-card step-4"></div>
+                    <p class="step-text">🔥 4. Forno</p>
+                </div>
+
             </div>
         </section>
 
         <!-- Padaria -->
+             <!-- Padaria (Até 12 produtos) -->
         <section id="panaderia" class="catalog">
             <h2>Padaria Tradicional</h2>
             <div class="grid-productos">
+                
+                <!-- Produto 1: Massa Mãe -->
                 <div class="producto-card">
-                    <div class="foto-placeholder">📸 Foto do Pão</div>
+                    <img src="panmasamadre.png" alt="Pão de Massa Mãe" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
                     <h3>Pão de Massa Mãe</h3>
                     <p><strong>Ingredientes:</strong> Farinha de trigo ecológica, água, massa mãe natural e sal marinho.</p>
                     <p><strong>Elaboração:</strong> Fermentação lenta de 24 horas e cozido em forno de pedra.</p>
                 </div>
+
+                <!-- Produto 2: Centeio -->
+                <div class="producto-card">
+                    <img src="pancenteno.png" alt="Pão de Centeio" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Pão de Centeio</h3>
+                    <p><strong>Ingredientes:</strong> Farinha de centeio integral, água, massa mãe de centeio e sal.</p>
+                    <p><strong>Elaboração:</strong> Amassado suave, fermentação prolongada em frio e côdea firme.</p>
+                </div>
+
+                <!-- Produto 3: Milho -->
+                <div class="producto-card">
+                    <img src="panmillo.png" alt="Pão de Milho" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Pão de Milho</h3>
+                    <p><strong>Ingredientes:</strong> Farinha de milho tradicional, farinha de trigo de força, água e levedura.</p>
+                    <p><strong>Elaboração:</strong> Escaldado prévio do milho ao estilo da fronteira e cozedura lenta.</p>
+                </div>
+
+                <!-- Produto 4: Integral -->
+                <div class="producto-card">
+                    <img src="panintegral.png" alt="Pão Integral" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Pão Integral 100%</h3>
+                    <p><strong>Ingredientes:</strong> Farinha de trigo 100% integral com todo o seu grão, água e sal marinho.</p>
+                    <p><strong>Elaboração:</strong> Repouso em bloco para desenvolver aromas e cozido tenro.</p>
+                </div>
+
             </div>
         </section>
 
-        <!-- Pastelaria -->
+
+        <!-- Pastelaria (Até 8 produtos) -->
         <section id="pasteleria" class="catalog">
             <h2>Pastelaria e Doces</h2>
             <div class="grid-productos">
+                
+                <!-- Produto 1: Croissant Artesanal -->
                 <div class="producto-card">
-                    <div class="foto-placeholder">📸 Foto do Doce</div>
+                    <img src="cruasanartesano.png" alt="Croissant Artesanal" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
                     <h3>Croissant Artesanal</h3>
                     <p><strong>Ingredientes:</strong> Farinha de força, manteiga pura, açúcar e levedura.</p>
                     <p><strong>Elaboração:</strong> Folhado à mão com múltiplas camadas e cozido até dourar.</p>
                 </div>
+
+                <!-- Produto 2: Pastel de Nata / Creme -->
+                <div class="producto-card">
+                    <img src="pastelcrema.png" alt="Pastel de Creme" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Pastel de Creme</h3>
+                    <p><strong>Ingredientes:</strong> Folhado fino, creme pasteleiro artesanal infusionado com canela e limão.</p>
+                    <p><strong>Elaboração:</strong> Cozedura crocante da base e recheado em frio para manter a cremosidade.</p>
+                </div>
+
+                <!-- Produto 3: Suíço de Açúcar -->
+                <div class="producto-card">
+                    <img src="suizoazucar.png" alt="Suíço de Açúcar" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Suíços de Açúcar</h3>
+                    <p><strong>Ingredientes:</strong> Massa de brioche tenra, água de flor de laranjeira, ovo e açúcar perolado por cima.</p>
+                    <p><strong>Elaboração:</strong> Dupla fermentação manual para uma miga super esponjosa e cozedura rápida.</p>
+                </div>
+
+                <!-- Produto 4: Palmeira de Chocolate -->
+                <div class="producto-card">
+                    <img src="palamerachoco.png" alt="Palmeira de Chocolate" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Palmeira de Chocolate</h3>
+                    <p><strong>Ingredientes:</strong> Folhado artesanal inverso, açúcar caramelizado e cobertura de chocolate puro.</p>
+                    <p><strong>Elaboração:</strong> Estendido e dobra tradicional, cozedura intensa e banho quente em chocolate.</p>
+                </div>
+
             </div>
         </section>
 
-        <!-- Empadas -->
+
+        <!-- Empadas (Até 4 produtos) -->
         <section id="empanadas" class="catalog">
             <h2>Empadas Caseiras</h2>
             <div class="grid-productos">
+                
+                <!-- Produto 1: Empada de Atum -->
                 <div class="producto-card">
-                    <div class="foto-placeholder">📸 Foto da Empada</div>
+                    <img src="empanada.png" alt="Empada Galega" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
                     <h3>Empada de Atum Galega</h3>
-                    <p><strong>Ingredientes:</strong> Massa de pão crocante, refogado de cebola, pimentos e atum.</p>
-                    <p><strong>Elaboração:</strong> Recheio tradicional cozido lentamente.</p>
+                    <p><strong>Ingredientes:</strong> Massa de pão crocante, refogado tradicional de cebola, pimentos e atum.</p>
+                    <p><strong>Elaboración:</strong> Recheio caseiro temperado e cozido lentamente para unificar os sabores.</p>
                 </div>
+
+                <!-- Produto 2: Empada de Carne -->
+                <div class="producto-card">
+                    <img src="empacarne.png" alt="Empada de Carne" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Empada de Carne Picada</h3>
+                    <p><strong>Ingredientes:</strong> Farinha de trigo, carne de vaca selecionada, cebola, ovo cozido e especiarias.</p>
+                    <p><strong>Elaboración:</strong> Guisado de carne a fogo lento com o ponto justo de suculência antes de cozer.</p>
+                </div>
+
+                <!-- Produto 3: Empada de Bacalhau -->
+                <div class="producto-card">
+                    <img src="empabaca.png" alt="Empada de Bacalhau com Passas" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Empada de Bacalhau com Passas</h3>
+                    <p><strong>Ingredientes:</strong> Massa artesanal, bacalhau desfiado demolhado, cebola refogada e passas doces.</p>
+                    <p><strong>Elaboración:</strong> Contraste agridoce tradicional montado à mão e cozido em forno de pedra.</p>
+                </div>
+
+                <!-- Produto 4: Empada de Frango -->
+                <div class="producto-card">
+                    <img src="empapose.png" alt="Empada de Frango e Cogumelos" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem;">
+                    <h3>Empada de Frango e Cogumelos</h3>
+                    <p><strong>Ingredientes:</strong> Massa fina crocante, peito de frango desfiado, cogumelos e refogado suave.</p>
+                    <p><strong>Elaboración:</strong> Recheio cremoso selado com o remate artesanal da casa e dourado perfeito.</p>
+                </div>
+
             </div>
         </section>
+
 
         <!-- Contacto -->
         <section id="contacto" class="contacto">
@@ -84,11 +195,14 @@
                 <div class="datos">
                     <p>📍 <strong>Endereço:</strong> Av. de la Raya, S/N - Fronteira Hispano-Portuguesa</p>
                     <p>📞 <strong>Telefone:</strong> +34 900 000 000</p>
+                    <p>✉️ <strong>Email:</strong> migas_amigas@gmail.com</p>
+                    <p>🌐 <strong>Facebook:</strong> /migasamigas</p>
+                    <p>📸 <strong>Instagram:</strong> @migas_amigas</p>
                 </div>
                 <div class="croquis">
                     <div class="mapa-placeholder">
-                        🗺️ [Croquis de Localização]
-                        <small>Fronteira Espanha - Portugal</small>
+                        <img src="mapa.png" alt="Croquis de ubicación Migas amigas" style="width: 100%; height: auto; display: block;">
+                            <small style="margin-top: 8px;">Fronteira Espanha - Portugal</small>
                     </div>
                 </div>
             </div>
