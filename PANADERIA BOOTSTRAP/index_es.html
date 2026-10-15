@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migas amigas - Panadería Fronteriza</title>
+
+    <!-- Bootstrap 5 (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Selector de idiomas (enlaces a archivos separados) -->
+    <div class="lang-selector text-center py-2">
+        <a href="index_es.html" class="btn btn-sm btn-lang active mx-1">Español 🇪🇸</a>
+        <a href="index_pt.html" class="btn btn-sm btn-lang mx-1">Português 🇵🇹</a>
+    </div>
+
+    <!-- ================= CABECERA + MENÚ ================= -->
+    <header class="hero text-center text-white">
+        <div class="container">
+            <h1 class="m-0">
+                <img src="migas.png" alt="Migas amigas" class="header-logo">
+            </h1>
+            <p class="tagline">Panadería Familiar Artesanal en la Frontera</p>
+
+            <nav class="navbar navbar-expand-md navbar-dark justify-content-center" aria-label="Principal">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                        aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#animacion">Proceso</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#panaderia">Panadería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pasteleria">Pastelería y Bollería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#empanadas">Empanadas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ================= PROCESO ARTESANAL ================= -->
+        <section id="animacion" class="container animacion-section text-center p-4 my-4">
+            <h2><em>Nuestro Proceso Artesanal</em></h2>
+
+            <!-- 2 columnas en móvil, 4 en pantallas medianas y grandes -->
+            <div class="row g-4 justify-content-center mt-2">
+                <div class="col-6 col-md-3">
+                    <div class="step-card step-1"></div>
+                    <p class="step-text">🌾 1. Molienda</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="step-card step-2"></div>
+                    <p class="step-text">🥣 2. Amasado</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="step-card step-3"></div>
+                    <p class="step-text">⏳ 3. Reposo</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="step-card step-4"></div>
+                    <p class="step-text">🔥 4. Horno</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PANADERÍA (hasta 12 productos) =================
+             Para añadir un producto: copia un bloque <div class="col"> ... </div>
+             y cambia imagen, nombre y textos. La rejilla se reorganiza sola. -->
+        <section id="panaderia" class="container my-5">
+            <h2 class="titulo-seccion">Panadería Tradicional</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="panmasamadre.png" class="card-img-top" alt="Pan de Masa Madre">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pan de Masa Madre</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Harina de trigo ecológica, agua, masa madre natural y sal marina.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Fermentación lenta de 24 horas y horneado en suelo de piedra.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="pancenteno.png" class="card-img-top" alt="Pan de Centeno">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pan de Centeno</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Harina de centeno integral, agua, masa madre de centeno y sal.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Amasado suave, fermentación prolongada en frío y corteza firme.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="panmillo.png" class="card-img-top" alt="Pan de Millo">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pan de Millo (Maíz)</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Harina de maíz tradicional, harina de trigo de fuerza, agua y levadura.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Escaldado previo del maíz al estilo de la frontera y cocción lenta.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="panintegral.png" class="card-img-top" alt="Pan Integral">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pan Integral 100%</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Harina de trigo 100% integral con todo su grano, agua y sal marina.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Reposo en bloque para desarrollar aromas y horneado tierno.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= PASTELERÍA Y BOLLERÍA (hasta 8 productos) ================= -->
+        <section id="pasteleria" class="container my-5">
+            <h2 class="titulo-seccion">Pastelería y Bollería</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="cruasanartesano.png" class="card-img-top" alt="Cruasán Artesano">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Cruasán Artesano</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Harina de fuerza, mantequilla pura, azúcar y levadura.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Hojaldrado a mano con múltiples capas y horneado hasta dorar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="pastelcrema.png" class="card-img-top" alt="Pastel de Crema">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pastel de Crema</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Hojaldre fino, crema pastelera artesanal infusionada con canela y limón.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Horneado crujiente de la base y relleno en frío para mantener la cremosidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="suizoazucar.png" class="card-img-top" alt="Suizo de Azúcar">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Suizos de Azúcar</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Masa de brioche tierna, agua de azahar, huevo y azúcar perlado por encima.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Doble fermentación manual para una miga súper esponjosa y horneado rápido.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="palamerachoco.png" class="card-img-top" alt="Palmera de Chocolate">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Palmera de Chocolate</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Hojaldre artesano inverso, azúcar caramelizado y cobertura de chocolate puro.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Estirado y pliegue tradicional, horneado intenso y baño caliente en chocolate.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= EMPANADAS (hasta 4 productos) ================= -->
+        <section id="empanadas" class="container my-5">
+            <h2 class="titulo-seccion">Empanadas Caseras</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="empanada.png" class="card-img-top" alt="Empanada Gallega">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Empanada de Atún Gallega</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Masa de pan crujiente, sofrito tradicional de cebolla, pimientos y atún.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Relleno casero sazonado y horneado lentamente para unificar los sabores.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="empacarne.png" class="card-img-top" alt="Empanada de Carne">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Empanada de Carne Picada</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Harina de trigo, carne vacuna seleccionada, cebolla, huevo duro y especias.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Guiso de carne a fuego lento con el punto justo de jugosidad antes del horneado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="empabaca.png" class="card-img-top" alt="Empanada de Bacalao con Pasas">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Empanada de Bacalao con Pasas</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Masa artesana, bacalao desmigado desalado, cebolla pochada y pasas dulces.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Contraste agridulce tradicional montado a mano y cocido en horno de piedra.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="empapose.png" class="card-img-top" alt="Empanada de Pollo y Setas">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Empanada de Pollo y Setas</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Masa fina crujiente, pechuga de pollo desmechada, champiñones y sofrito suave.</p>
+                            <p class="card-text"><strong>Elaboración:</strong> Relleno cremoso sellado con el repulgue artesanal de la casa y dorado perfecto.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= CONTACTO ================= -->
+        <section id="contacto" class="container contacto p-4 my-5">
+            <h2 class="mb-4"><u>Dónde Encontrarnos</u></h2>
+
+            <div class="row g-4 align-items-center">
+
+                <!-- Columna de datos: 12 columnas en móvil, 6 en pantallas medianas -->
+                <div class="col-12 col-md-6">
+                    <p>📍 <strong>Dirección:</strong> Av. de la Raya, S/N - Frontera Hispano-Portuguesa</p>
+
+                    <!-- Tabla de Bootstrap -->
+                    <table class="table table-bordered tabla-contacto">
+                        <tbody>
+                            <tr><th scope="row">📞 Teléfono:</th><td>+34 900 000 000</td></tr>
+                            <tr><th scope="row">✉️ Email:</th><td>migas_amigas@gmail.com</td></tr>
+                            <tr><th scope="row">🌐 Facebook:</th><td>/migasamigas</td></tr>
+                            <tr><th scope="row">📸 Instagram:</th><td>@migas_amigas</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Columna del croquis -->
+                <div class="col-12 col-md-6">
+                    <figure class="croquis-box m-0">
+                        <img src="mapa.png" class="img-fluid" alt="Croquis de ubicación Migas amigas">
+                        <figcaption class="small fw-bold mt-2">Frontera España - Portugal</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie text-center p-4">
+        <p class="m-0">&copy; 2026 Migas amigas - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap 5 (JS): necesario para el botón del menú en móvil -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
