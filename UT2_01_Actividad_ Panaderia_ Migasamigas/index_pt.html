@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migas amigas - Padaria Fronteiriça</title>
+
+    <!-- Bootstrap 5 (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Seletor de idiomas -->
+    <div class="lang-selector text-center py-2">
+        <a href="index_es.html" lang="es" class="btn btn-sm btn-lang mx-1">Español <span aria-hidden="true">🇪🇸</span></a>
+        <a href="index_pt.html" lang="pt" class="btn btn-sm btn-lang active mx-1">Português <span aria-hidden="true">🇵🇹</span></a>
+    </div>
+
+    <!-- ================= CABEÇALHO + MENU ================= -->
+    <header class="hero text-center text-white">
+        <div class="container">
+            <h1 class="m-0">
+                <img src="migas.png" alt="Migas amigas" class="header-logo">
+            </h1>
+            <p class="tagline">Padaria Familiar Artesanal na Fronteira</p>
+
+            <nav class="navbar navbar-expand-md navbar-dark justify-content-center" aria-label="Principal">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                        aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#animacion">Processo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#padaria">Padaria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pasteleria">Pastelaria e Bolaria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#empanadas">Empadas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ================= PROCESSO ARTESANAL ================= -->
+        <section id="animacion" class="container animacion-section text-center p-4 my-4">
+            <h2><em>O Nosso Processo Artesanal</em></h2>
+
+            <div class="row g-4 justify-content-center mt-2">
+                <div class="col-6 col-md-3">
+                    <img src="molienda.png" class="step-card" alt="Moinho de pedra a moer o grão">
+                    <p class="step-text"><span aria-hidden="true">🌾</span> 1. Moagem</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="amasado.png" class="step-card" alt="Padeiro a amassar à mão sobre a mesa">
+                    <p class="step-text"><span aria-hidden="true">🥣</span> 2. Amassar</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="reposo.png" class="step-card" alt="Bolinhas de massa a repousar junto a um rolo">
+                    <p class="step-text"><span aria-hidden="true">⏳</span> 3. Repouso</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="hornoleña.png" class="step-card" alt="Pãezinhos a dourar num forno a lenha">
+                    <p class="step-text"><span aria-hidden="true">🔥</span> 4. Forno</p>
+                </div>
+            </div>
+
+            <p class="mt-3 mb-0">Resumo do processo: primeiro moemos o grão para obter a farinha; depois amassamos à mão a farinha com água, sal e massa-mãe; a massa repousa e fermenta durante horas; por fim, coze-se em forno a lenha até o pão ficar dourado.</p>
+        </section>
+        <!-- ================= PADARIA (até 12 produtos) =================
+             Para adicionar um produto: copie um bloco <div class="col"> ... </div>
+             e altere a imagem, nome e textos. A grelha reorganiza-se sozinha. -->
+        <section id="padaria" class="container my-5">
+            <h2 class="titulo-seccion">Padaria Tradicional</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="panmasamadre.png" class="card-img-top" alt="Broa redonda de pão de massa-mãe">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pão de Massa-Mãe</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo biológica, água, massa-mãe natural e sal marinho.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Fermentação lenta de 24 horas e cozedura em soleira de pedra.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="pancenteno.png" class="card-img-top" alt="Pão de centeio redondo de côdea escura">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pão de Centeio</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de centeio integral, água, massa-mãe de centeio e sal.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Amassadura suave, fermentação prolongada no frio e côdea firme.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="panmillo.png" class="card-img-top" alt="Pedaço de pão de milho de miolo grosso">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pão de Milho</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de milho tradicional, farinha de trigo de força, água e fermento.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Escaldão prévio do milho ao estilo da fronteira e cozedura lenta.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="panintegral.png" class="card-img-top" alt="Fatias de pão integral com sementes">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pão Integral 100%</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo 100% integral com todo o grão, água e sal marinho.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Repouso em bloco para desenvolver aromas e cozedura macia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Baguette -->
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="baguette.png" class="card-img-top" alt="Três baguetes de côdea dourada">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Baguette</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo branca de força, água purificada, fermento e sal marinho.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Formato alongado clássico, côdea muito estaladiça e miolo branco muito arejado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Ciabatta -->
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="chapata.png" class="card-img-top" alt="Várias chapatas rústicas empilhadas">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Ciabatta (Chiapata)</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo de alta força, elevada hidratação de água, massa-mãe e sal.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Formato plano rústico de origem italiana com miolo alveolado ideal para sanduíches.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Mollete -->
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="mollete.png" class="card-img-top" alt="Molletes redondos de côdea macia">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Mollete Andaluz</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo suave, água, uma pitada de banha ou azeite e sal.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Pãozinho branco ovalado de côdea macia e miolo tenro, ideal para torrar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Pan Candeal -->
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="candeal.png" class="card-img-top" alt="Pão candeal redondo com cortes em cruz">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pão Candeal (de Cruz)</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo candeal de baixa força, água fina, massa-mãe e sal.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Amassadura lenta com rolos que resulta num miolo branco denso e côdea lisa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Pan de Pagès -->
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="pages.png" class="card-img-top" alt="Broa redonda de pão de Pagès">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pão de Pagès</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo tradicional, água, cultura de massa-mãe viva e sal marinho.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Broa redonda camponesa feita em forno de lenha com um miolo tenro muito duradouro.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Pan Pita -->
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="pita.png" class="card-img-top" alt="Pilhas de pães pita redondos">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pão Pita</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo branca refinada, água morna, fermento de padeiro e sal.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Pão plano do Médio Oriente cozido a alta temperatura para criar a sua bolsa interior.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Focaccia -->
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="foccacia.png" class="card-img-top" alt="Focaccia cortada em porções com ervas">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Focaccia Italiana</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de força, água, abundante azeite virgem extra, sal grosso e alecrim.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Pão plano espesso fermentado diretamente no tabuleiro para obter uma textura fofa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Pan de Cea -->
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="cea.png" class="card-img-top" alt="Pão de Cea alongado com uma fenda central">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Pão de Cea (I.G.P.)</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo regional, água pura de nascente, massa-mãe própria e sal.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Amassadura artesanal galega com uma fenda central característica e sabor ligeiramente ácido.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+      <!-- ================= PASTELARIA E PADARIA (até 8 produtos) ================= -->
+<section id="pasteleria" class="container my-5">
+    <h2 class="titulo-seccion">Pastelaria e Padaria</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
+
+        <!-- 1. Croissant Artesanal -->
+        <div class="col">
+            <div class="card h-100 producto-card">
+                <img src="cruasanartesano.png" class="card-img-top" alt="Croissant artesanal dourado e folhado">
+                <div class="card-body">
+                    <h3 class="card-title h5">Croissant Artesanal</h3>
+                    <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo forte, manteiga pura, açúcar e levedura.</p>
+                    <p class="card-text"><strong>Preparação:</strong> Folhado à mão com múltiplas camadas e cozido no forno até dourar.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Pastel de Creme -->
+        <div class="col">
+            <div class="card h-100 producto-card">
+                <img src="pastelcrema.png" class="card-img-top" alt="Pastel de massa folhada recheado com creme">
+                <div class="card-body">
+                    <h3 class="card-title h5">Pastel de Creme</h3>
+                    <p class="card-text"><strong>Ingredientes:</strong> Massa folhada fina, creme pasteleiro artesanal infundido com canela e limão.</p>
+                    <p class="card-text"><strong>Preparação:</strong> Cozedura crocante da base e recheado a frio para manter a cremosidade.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Suíço de Açúcar -->
+        <div class="col">
+            <div class="card h-100 producto-card">
+                <img src="suizoazucar.png" class="card-img-top" alt="Suíço de brioche com açúcar por cima">
+                <div class="card-body">
+                    <h3 class="card-title h5">Suíços de Açúcar</h3>
+                    <p class="card-text"><strong>Ingredientes:</strong> Massa de brioche tenra, água de flor de laranjeira, ovo e açúcar granulado por cima.</p>
+                    <p class="card-text"><strong>Preparação:</strong> Dupla fermentação manual para um miolo super fofo e cozedura rápida no forno.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Palmier de Chocolate -->
+        <div class="col">
+            <div class="card h-100 producto-card">
+                <img src="palamerachoco.png" class="card-img-top" alt="Palmiers de massa folhada com chocolate">
+                <div class="card-body">
+                    <h3 class="card-title h5">Palmier de Chocolate</h3>
+                    <p class="card-text"><strong>Ingredientes:</strong> Massa folhada artesanal invertida, açúcar caramelizado e cobertura de chocolate puro.</p>
+                    <p class="card-text"><strong>Preparação:</strong> Estendido e dobra tradicional, cozedura intensa no forno e banho quente em chocolate.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Napolitana de Chocolate -->
+        <div class="col">
+            <div class="card h-100 producto-card">
+                <img src="napolitana.png" class="card-img-top" alt="Napolitanas de massa folhada recheadas com chocolate">
+                <div class="card-body">
+                    <h3 class="card-title h5">Napolitana de Chocolate</h3>
+                    <p class="card-text"><strong>Ingredientes:</strong> Massa folhada tenra, creme de chocolate derretido e granulado de chocolate ou amêndoa picada.</p>
+                    <p class="card-text"><strong>Preparação:</strong> Enrolado tradicional da massa com duplo ponto de recheio, cozido no forno e decorado na superfície.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Caracol de Passas -->
+        <div class="col">
+            <div class="card h-100 producto-card">
+                <img src="caracola.png" class="card-img-top" alt="Caracóis de massa folhada com passas">
+                <div class="card-body">
+                    <h3 class="card-title h5">Caracol de Passas</h3>
+                    <p class="card-text"><strong>Ingredientes:</strong> Espiral de massa folhada ou brioche, creme pasteleiro fino, passas de uva sultanas e geleia de brilho para pastelaria.</p>
+                    <p class="card-text"><strong>Preparação:</strong> Distribuição do recheio em camada fina, enrolado em cilindro, corte em fatias e cozido no forno.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Bola de Berlim -->
+        <div class="col">
+            <div class="card h-100 producto-card">
+                <img src="berlinesa.png" class="card-img-top" alt="Bolas de Berlim com açúcar e recheadas com creme">
+                <div class="card-body">
+                    <h3 class="card-title h5">Bola de Berlim de Creme</h3>
+                    <p class="card-text"><strong>Ingredientes:</strong> Massa fina e fofa, açúcar granulado para polvilhar e creme pasteleiro suave.</p>
+                    <p class="card-text"><strong>Preparação:</strong> Fritura artesanal controlada da massa, envolvida imediatamente em açúcar e recheada generosamente com creme.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Ensaimada -->
+        <div class="col">
+            <div class="card h-100 producto-card">
+                <img src="ensaimada.png" class="card-img-top" alt="Ensaimada em espiral com açúcar em pó">
+                <div class="card-body">
+                    <h3 class="card-title h5">Ensaimada</h3>
+                    <p class="card-text"><strong>Ingredientes:</strong> Massa açucarada tradicional, banha de porco, farinha de trigo forte e açúcar em pó.</p>
+                    <p class="card-text"><strong>Preparação:</strong> Estendido milimétrico da massa, untada, moldada à mão em espiral e cozedura definitiva no forno.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- ================= EMPADAS (até 4 produtos) ================= -->
+        <section id="empanadas" class="container my-5">
+            <h2 class="titulo-seccion">Empadas Caseiras</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="empanada.png" class="card-img-top" alt="Empada galega de atum em porções">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Empada de Atum Galega</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Massa de pão estaladiça, refogado tradicional de cebola, pimentos e atum.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Recheio caseiro temperado e cozido lentamente para unir os sabores.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="empacarne.png" class="card-img-top" alt="Empada de carne cortada">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Empada de Carne Picada</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Farinha de trigo, carne de vaca selecionada, cebola, ovo cozido e especiarias.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Guisado de carne em lume brando, com o ponto certo de suculência antes de ir ao forno.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="empabaca.png" class="card-img-top" alt="Empada de bacalhau com passas e alecrim">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Empada de Bacalhau com Passas</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Massa artesanal, bacalhau desfiado e demolhado, cebola estufada e passas doces.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Contraste agridoce tradicional, montado à mão e cozido em forno de pedra.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 producto-card">
+                        <img src="empapose.png" class="card-img-top" alt="Empada de frango e cogumelos aberta">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Empada de Frango e Cogumelos</h3>
+                            <p class="card-text"><strong>Ingredientes:</strong> Massa fina estaladiça, peito de frango desfiado, cogumelos e refogado suave.</p>
+                            <p class="card-text"><strong>Preparação:</strong> Recheio cremoso selado com o lacre artesanal da casa e dourado na perfeição.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= CONTACTO ================= -->
+        <section id="contacto" class="container contacto p-4 my-5">
+            <h2 class="mb-4"><u>Onde nos Encontrar</u></h2>
+
+            <div class="row g-4 align-items-center">
+
+                <!-- Coluna de dados: 12 colunas em telemóvel, 6 em ecrãs médios -->
+                <div class="col-12 col-md-6">
+                    <p><span aria-hidden="true">📍</span> <strong>Morada:</strong> Av. da Raia, S/N - Fronteira Luso-Espanhola</p>
+
+                    <!-- Tabela do Bootstrap -->
+                    <table class="table table-bordered tabla-contacto">
+                        <tbody>
+                            <tr><th scope="row"><span aria-hidden="true">📞</span> Telefone:</th><td>+34 900 000 000</td></tr>
+                            <tr><th scope="row"><span aria-hidden="true">✉️</span> Email:</th><td>migas_amigas@gmail.com</td></tr>
+                            <tr><th scope="row"><span aria-hidden="true">🌐</span> Facebook:</th><td>/migasamigas</td></tr>
+                            <tr><th scope="row"><span aria-hidden="true">📸</span> Instagram:</th><td>@migas_amigas</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Coluna do mapa -->
+                <div class="col-12 col-md-6">
+                    <!-- Texto explicativo sobre o mapa -->
+                    <p class="fw-bold mb-3 text-center text-md-start">Castelo Branco é uma vila que se encontra entre Espanha e Portugal.</p>
+            
+                    <figure class="croquis-box m-0">
+                        <img src="mapa.png" class="img-fluid" alt="Esboço de localização da padaria em Castelo Branco, junto à fronteira entre Espanha e Portugal">
+                        <figcaption class="small fw-bold mt-2">Fronteira Espanha - Portugal</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="pie text-center p-4">
+        <p class="m-0">&copy; 2026 Migas amigas - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
